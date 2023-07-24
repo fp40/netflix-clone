@@ -1,0 +1,328 @@
+/* Gerais */
+body {
+  background-color: #000;
+}
+
+.container {
+  padding-left: 60px;
+  padding-top: 60px;
+  margin-left: 0;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+.btn-custom-white {
+  background-color: #fff;
+  color: #000;
+}
+
+.btn-custom-translucent {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+.btn-custom-translucent:hover {
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.btn-custom-white:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.btn-custom-round {
+  padding: 5px 9px !important;
+}
+
+.opacity-50 {
+  opacity: 0.5;
+}
+
+/* Login */
+#bg_filmes {
+  background-image: url(../assets/background-login.png);
+  z-index: 1;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#logo {
+  width: 200px;
+}
+
+header {
+  padding: 60px;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.69) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  position: absolute;
+  width: 100%;
+  top: 0;
+  z-index: 2;
+}
+
+#login_box {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 65px;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 450px;
+  height: 600px;
+  color: #858585;
+}
+
+#login_box a {
+  color: white;
+}
+
+#btn_login {
+  background-color: #d81f26;
+  color: white;
+}
+
+#login_box input {
+  background-color: #2d2d2d;
+  border: 0px;
+}
+#login_box input::placeholder {
+  color: #858585;
+  font-size: 16px;
+}
+
+/* Home  */
+
+.menu_list {
+  list-style: none;
+  padding-left: 0;
+  padding-top: 7px;
+}
+
+.menu_list li {
+  display: inline-block;
+  margin-right: 25px;
+}
+.menu_list a {
+  color: white;
+  text-decoration: none;
+}
+
+#hero {
+  height: 1000px;
+  background-image: url(../assets/background-home.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+}
+
+#hero::after {
+  content: '';
+  width: 100%;
+  height: 350px;
+  display: block;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+  position: absolute;
+  left: 0;
+  z-index: 2;
+  top: calc(1000px - 350px);
+}
+
+#hero_infos {
+  margin-top: 270px;
+  z-index: 3;
+  position: relative;
+}
+
+#hero_infos img.logo {
+  margin-bottom: 50px;
+  width: 700px;
+}
+
+#hero_infos h1 {
+  margin-bottom: 20px;
+}
+
+#hero_infos h1 img {
+  width: 45px;
+  margin-top: -5px;
+  margin-right: 15px;
+}
+
+#main-content {
+  margin-top: 1000px;
+  z-index: 2;
+  position: relative;
+}
+
+#main-content .container {
+  margin-bottom: -50px;
+}
+
+.filme-lista {
+  overflow-x: scroll;
+  list-style: none;
+  padding-left: 60px;
+  white-space: nowrap;
+  display: block;
+  padding-top: 60px;
+  overflow: hidden;
+  height: 420px;
+}
+
+.filme {
+  display: inline-block;
+  width: 300px;
+  margin-right: 10px;
+  border-radius: 5px;
+  overflow: auto;
+  overflow-y: hidden;
+}
+
+.filme .img-fluid {
+  border-radius: 5px;
+}
+
+.filme:hover {
+  cursor: pointer;
+  transform: scale(1.4);
+  z-index: 999;
+  transition: 0.3s;
+}
+
+.filme:hover .filme_info {
+  transform: scale(1);
+  transition: 0.3s;
+  border-radius: 0px 0px 5px 5px;
+}
+
+.filme:hover .img-fluid {
+  border-radius: 5px 5px 0px 0px;
+}
+
+.filme_info {
+  background-color: #171717;
+  padding: 10px;
+  height: 100px;
+  border-radius: 0px 0px 5px 5px;
+  transform: scale(0);
+}
+
+.filme_info .col-12 {
+  margin-top: 5px;
+}
+
+.filme_info .col-12:first-child {
+  margin-bottom: 14px;
+}
+
+.filme_info p {
+  color: #7e7b7b;
+  font-size: 12px;
+}
+
+.filme_info p text {
+  color: #fff;
+}
+
+section {
+  margin-bottom: -200px;
+  position: relative;
+}
+
+section:hover {
+  z-index: 9;
+}
+/* MODAL */
+.modal-dialog,
+.modal-content {
+  background-color: #171717;
+}
+
+.modal-dialog {
+  max-width: 850px;
+  border-radius: 5px;
+}
+
+.modal-hero {
+  height: 478.125px;
+  background-image: url(../assets/diabo-nosso-de-cada-dia-capa.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 40px;
+  border-radius: 5px;
+}
+
+.modal-hero::after {
+  content: '';
+  width: 100%;
+  height: 200px;
+  display: block;
+  background: linear-gradient(180deg, rgba(23, 23, 23, 0) 0%, #171717 100%);
+  position: absolute;
+  left: 0;
+  margin-top: -150px;
+  z-index: 1;
+}
+
+.modal-hero img {
+  width: 350px;
+  margin-top: 80px;
+  position: relative;
+  z-index: 1;
+}
+
+.modal-hero-infos {
+  position: relative;
+  margin-top: 120px;
+  z-index: 2;
+}
+
+.modal-hero-infos button:first-child {
+  margin-right: 20px;
+}
+
+.filme_descricao {
+  font-size: 16px;
+  color: #fff;
+}
+
+.filme_elenco {
+  font-size: 13px;
+  color: #7e7e7e;
+}
+
+.filme_elenco text {
+  color: #fff;
+}
+
+.modal-infos .container {
+  padding-top: 20px;
+  padding-left: 40px;
+}
+
+#lista_episodios {
+  list-style: none;
+  padding: 0;
+}
+
+#lista_episodios li:hover {
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+#lista_episodios li {
+  padding: 20px;
+}
+
+#lista_episodios li p {
+  font-size: 13px;
+  color: #7e7e7e;
+}
