@@ -28,7 +28,7 @@ router.get('/home', async (req, res) => {
     const principal = finalFilmes[0]
 
     //separar em seções
-    const secoes = _.chunk(finalFilmes, 5)
+    const secoes = _.chunk(finalFilmes, 6)
 
     res.json({ error: false, principal, secoes })
   } catch (err) {
